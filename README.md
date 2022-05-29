@@ -12,7 +12,10 @@ Well, I was fed up with it and made this little library that just does one thing
 Why an int, you might wonder?
 
 Well, that's easy to deal with and not get crazy with all those float shenanigans.
-## Installation
+## Features 🚀
+
+- Parses a "dirty" price string into an integer (e.g. "42,069.23 USD" => 4206923)
+- Returns values as either directly integer or as Price struct (allows some extra formatting features)
 
 Install it as usual with:
 
