@@ -28,6 +28,14 @@ func (p *Price) Float() float64 {
 	return float64(p.Amount) / 100
 }
 
+func IntFromString(text string) (int, error) {
+	price, err := PriceFromString(text)
+	if err != nil {
+		return 0, err
+	}
+	return int(price.Amount), nil
+}
+
 // Given a string, returns a price struct
 // This parser is a direct Go port from this Python implementation: https://github.com/hayj/SystemTools/blob/master/systemtools/number.py
 // TODO: Add tests
